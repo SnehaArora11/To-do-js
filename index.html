@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+     <main>
+        <div class="wrap">
+            <section class="heading">
+                <p class="tittle">TO-Do List</p>
+                <p class="subtitle">Lets complete everything on time</p>
+            </section>
+            <section class="task_manager">
+                <div class="search-box">
+                    <form  class="search">
+                        <input type="text" name="task" placeholder="Search for task" autocomplete="off">
+                        <i class="bi bi-x-octagon-fill reset"></i>
+                    </form>
+                </div>
+                <div class="task-box">
+                    <ul class="tasks">
+                        <li>
+                            <span>Learn Javascript</span>
+                            <i class="bi bi-calendar-x-fill delete"></i>
+                        </li>
+                        <li>
+                            <span>Leetcode Daily</span>
+                            <i class="bi bi-calendar-x-fill delete"></i>
+                        </li>
+                        <li>
+                            <span>Excersise</span>
+                            <i class="bi bi-calendar-x-fill delete"></i>
+                        </li>
+                        <li>
+                            <span>Buy groceries</span>
+                            <i class="bi bi-calendar-x-fill delete"></i>
+                        </li>
+                        <li>
+                            <span>Call mom</span>
+                            <i class="bi bi-calendar-x-fill delete"></i>
+                        </li>
+                    </ul>
+                    <form  class="add">
+                        <input type="text" placeholder="Add a new task" name="task" autocomplete="off">
+                        <input type="submit" value="Add">
+                    </form>
+                </div>
+                <div class="message">
+                    <span>You have 3 pending tasks</span>
+                    <button class="clearall">Clear</button>
+                </div>
+            </section>
+        </div>
+     </main>
+    <script src="./index.js"></script>
+</body>
+</html>
